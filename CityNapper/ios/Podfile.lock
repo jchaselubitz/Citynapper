@@ -266,7 +266,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - ReactNativeNavigation (from `../node_modules/react-native-navigation`)
+  - ReactNativeNavigation (from `../node_modules/react-native-navigation/ReactNativeNavigation.podspec`)
   - RNBoundary (from `../node_modules/react-native-boundary/ios`)
   - RNPermissions (from `../node_modules/react-native-permissions`)
   - "RNReverseGeocode (from `../node_modules/@kiwicom/react-native-reverse-geocode`)"
@@ -331,7 +331,7 @@ EXTERNAL SOURCES:
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
   ReactNativeNavigation:
-    :path: "../node_modules/react-native-navigation"
+    :podspec: "../node_modules/react-native-navigation/ReactNativeNavigation.podspec"
   RNBoundary:
     :path: "../node_modules/react-native-boundary/ios"
   RNPermissions:
@@ -378,6 +378,6 @@ SPEC CHECKSUMS:
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   Yoga: 14927e37bd25376d216b150ab2a561773d57911f
 
-PODFILE CHECKSUM: a4f3a93e443bdd9fde28ec5691e5c96a02460164
+PODFILE CHECKSUM: c968759bfbaf38259256f16d9c2fe0a9bad280cf
 
 COCOAPODS: 1.8.4

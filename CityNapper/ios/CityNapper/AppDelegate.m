@@ -27,6 +27,11 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  
+  //NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+  // [ReactNativeNavigation bootstrap:jsCodeLocation launchOptions:launchOptions];
+
+  
   return YES;
 }
 
