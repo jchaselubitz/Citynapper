@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {AppRegistry } from 'react-native';
 import {Button} from 'react-native-elements';
 import MapContainer from './MapContainer'
-import { withNavigation } from 'react-navigation'
+import { withNavigation } from 'react-native-navigation'
 
 class SelectionContainer extends Component {
   static navigationOptions = { header: null }

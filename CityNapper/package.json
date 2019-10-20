@@ -10,12 +10,17 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@kiwicom/react-native-reverse-geocode": "0.0.7",
     "@mapbox/polyline": "^1.1.0",
     "react": "16.9.0",
     "react-native": "0.61.2",
     "react-native-boundary": "^1.1.1",
+    "react-native-elements": "^1.2.6",
+    "react-native-maps": "0.26.1",
     "react-native-navigation": "^2.27.9",
-    "react-native-permissions": "^2.0.2"
+    "react-native-permissions": "^2.0.2",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-video": "^5.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
