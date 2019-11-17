@@ -294,8 +294,8 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - ReactNativeNavigation (from `../node_modules/react-native-navigation/ReactNativeNavigation.podspec`)
-  - RNBoundary (from `../node_modules/react-native-boundary/ios`)
+  - ReactNativeNavigation (from `../node_modules/react-native-navigation`)
+  - RNBoundary (from `../node_modules/react-native-boundary/ios/RNBoundary.podspec`)
   - RNPermissions (from `../node_modules/react-native-permissions`)
   - "RNReverseGeocode (from `../node_modules/@kiwicom/react-native-reverse-geocode`)"
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
@@ -363,9 +363,9 @@ EXTERNAL SOURCES:
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
   ReactNativeNavigation:
-    :podspec: "../node_modules/react-native-navigation/ReactNativeNavigation.podspec"
+    :path: "../node_modules/react-native-navigation"
   RNBoundary:
-    :path: "../node_modules/react-native-boundary/ios"
+    :podspec: "../node_modules/react-native-boundary/ios/RNBoundary.podspec"
   RNPermissions:
     :path: "../node_modules/react-native-permissions"
   RNReverseGeocode:
@@ -407,12 +407,12 @@ SPEC CHECKSUMS:
   React-RCTVibration: fb54c732fd20405a76598e431aa2f8c2bf527de9
   ReactCommon: 5848032ed2f274fcb40f6b9ec24067787c42d479
   ReactNativeNavigation: 00bfacb7d93b4d87464872cf6b9e4cd480ba0981
-  RNBoundary: c992a56dd339c16f1be97bc3583113d5fa42c340
+  RNBoundary: 29313a1986de12cdb552d37db1e125d87b1f8d66
   RNPermissions: 76d6d5a65496b33378afe4b90ae5b30629ddd900
   RNReverseGeocode: c2c1d1593e4e09804fbb2643a2ea80fa031a9543
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   Yoga: 14927e37bd25376d216b150ab2a561773d57911f
 
-PODFILE CHECKSUM: db3584e3654a978d71044cff382faf33aafd6654
+PODFILE CHECKSUM: a5d05dc6b70702d8c20bf2bc1561a077bfe004b1
 
 COCOAPODS: 1.8.4
