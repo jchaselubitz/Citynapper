@@ -14,11 +14,11 @@
     "@mapbox/polyline": "^1.1.0",
     "react": "16.9.0",
     "react-native": "0.61.2",
-    "react-native-boundary": "^1.1.1",
     "react-native-elements": "^1.2.6",
     "react-native-maps": "0.26.1",
     "react-native-navigation": "^2.27.9",
     "react-native-permissions": "^2.0.2",
+    "react-native-simple-native-geofencing": "^0.8.5",
     "react-native-vector-icons": "^6.6.0",
     "react-native-video": "^5.0.2"
   },

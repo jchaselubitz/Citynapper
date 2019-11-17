@@ -12,14 +12,13 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2B95FAB17B76C6D55719D731 /* libPods-CityNapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 663A8A2EE3B51F15F77BED18 /* libPods-CityNapper.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* CityNapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CityNapperTests.m */; };
-		324C0B0B4F3B1DD1EAE8FDBA /* libPods-CityNapper-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CCEF7578DAA44C06B64CD4 /* libPods-CityNapper-tvOS.a */; };
-		58AA3F7BD0953B1BBB2AD22E /* libPods-CityNapper-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0979AFED3DAB90D7B90E615B /* libPods-CityNapper-tvOSTests.a */; };
-		8A410AAC6B4801412360DDA8 /* libPods-CityNapperTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 118C58DAFAA47F9CC1EF4B0D /* libPods-CityNapperTests.a */; };
-		CB1A37DAE99AFEA563D045E5 /* libPods-CityNapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 261205885DD25EFE85FCF4A4 /* libPods-CityNapper.a */; };
+		5D76A3C69D3260572D7ED4E8 /* libPods-CityNapper-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E85933EA13F448165A2AF7EA /* libPods-CityNapper-tvOS.a */; };
+		B0F0B61300427A920278AD9C /* libPods-CityNapper-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F49DE2FA73C86B732043015 /* libPods-CityNapper-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +43,8 @@
 		00E356EE1AD99517003FC87E /* CityNapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityNapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* CityNapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityNapperTests.m; sourceTree = "<group>"; };
-		0979AFED3DAB90D7B90E615B /* libPods-CityNapper-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CityNapper-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		118C58DAFAA47F9CC1EF4B0D /* libPods-CityNapperTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CityNapperTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02647710FCB30DF4450F1F0F /* Pods-CityNapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapper.release.xcconfig"; path = "Target Support Files/Pods-CityNapper/Pods-CityNapper.release.xcconfig"; sourceTree = "<group>"; };
+		033FF0AB1241F8A2A5565ADC /* Pods-CityNapper-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapper-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-CityNapper-tvOSTests/Pods-CityNapper-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* CityNapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityNapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CityNapper/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CityNapper/AppDelegate.m; sourceTree = "<group>"; };
@@ -53,18 +52,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CityNapper/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CityNapper/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CityNapper/main.m; sourceTree = "<group>"; };
-		1A0F46845330A4BADF7A393B /* Pods-CityNapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapper.debug.xcconfig"; path = "Target Support Files/Pods-CityNapper/Pods-CityNapper.debug.xcconfig"; sourceTree = "<group>"; };
-		261205885DD25EFE85FCF4A4 /* libPods-CityNapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CityNapper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD7A963BE2FD0F888FCE0F3 /* Pods-CityNapper-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapper-tvOS.release.xcconfig"; path = "Target Support Files/Pods-CityNapper-tvOS/Pods-CityNapper-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		2B4E3C85D8F1895BFEBC3D5C /* Pods-CityNapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapper.debug.xcconfig"; path = "Target Support Files/Pods-CityNapper/Pods-CityNapper.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* CityNapper-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CityNapper-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* CityNapper-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CityNapper-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DDAF420CF15FDC0FEE6C6E0 /* Pods-CityNapperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapperTests.release.xcconfig"; path = "Target Support Files/Pods-CityNapperTests/Pods-CityNapperTests.release.xcconfig"; sourceTree = "<group>"; };
-		52DFC8416014F0B149F1CF3B /* Pods-CityNapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapper.release.xcconfig"; path = "Target Support Files/Pods-CityNapper/Pods-CityNapper.release.xcconfig"; sourceTree = "<group>"; };
-		5C1B3B91233E4EEF3B458C47 /* Pods-CityNapper-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapper-tvOS.release.xcconfig"; path = "Target Support Files/Pods-CityNapper-tvOS/Pods-CityNapper-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		74D3F169301F5F205B07E08A /* Pods-CityNapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapperTests.debug.xcconfig"; path = "Target Support Files/Pods-CityNapperTests/Pods-CityNapperTests.debug.xcconfig"; sourceTree = "<group>"; };
-		90CCEF7578DAA44C06B64CD4 /* libPods-CityNapper-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CityNapper-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4815B15FE49BE8290E992DB /* Pods-CityNapper-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapper-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CityNapper-tvOS/Pods-CityNapper-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		C02F0E71D993AD6C10D80DA7 /* Pods-CityNapper-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapper-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CityNapper-tvOSTests/Pods-CityNapper-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C5A37C906AAB253059B84B0A /* Pods-CityNapper-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapper-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-CityNapper-tvOSTests/Pods-CityNapper-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		663A8A2EE3B51F15F77BED18 /* libPods-CityNapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CityNapper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F49DE2FA73C86B732043015 /* libPods-CityNapper-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CityNapper-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC67652909905CA21536B91F /* Pods-CityNapper-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapper-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CityNapper-tvOS/Pods-CityNapper-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B13116AB753C6A785B2FD91A /* Pods-CityNapper-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityNapper-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CityNapper-tvOSTests/Pods-CityNapper-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E85933EA13F448165A2AF7EA /* libPods-CityNapper-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CityNapper-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A410AAC6B4801412360DDA8 /* libPods-CityNapperTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB1A37DAE99AFEA563D045E5 /* libPods-CityNapper.a in Frameworks */,
+				2B95FAB17B76C6D55719D731 /* libPods-CityNapper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324C0B0B4F3B1DD1EAE8FDBA /* libPods-CityNapper-tvOS.a in Frameworks */,
+				5D76A3C69D3260572D7ED4E8 /* libPods-CityNapper-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58AA3F7BD0953B1BBB2AD22E /* libPods-CityNapper-tvOSTests.a in Frameworks */,
+				B0F0B61300427A920278AD9C /* libPods-CityNapper-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +136,9 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				261205885DD25EFE85FCF4A4 /* libPods-CityNapper.a */,
-				90CCEF7578DAA44C06B64CD4 /* libPods-CityNapper-tvOS.a */,
-				0979AFED3DAB90D7B90E615B /* libPods-CityNapper-tvOSTests.a */,
-				118C58DAFAA47F9CC1EF4B0D /* libPods-CityNapperTests.a */,
+				663A8A2EE3B51F15F77BED18 /* libPods-CityNapper.a */,
+				E85933EA13F448165A2AF7EA /* libPods-CityNapper-tvOS.a */,
+				7F49DE2FA73C86B732043015 /* libPods-CityNapper-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,14 +179,12 @@
 		B84E8F4F77ADC571A72C7C09 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1A0F46845330A4BADF7A393B /* Pods-CityNapper.debug.xcconfig */,
-				52DFC8416014F0B149F1CF3B /* Pods-CityNapper.release.xcconfig */,
-				A4815B15FE49BE8290E992DB /* Pods-CityNapper-tvOS.debug.xcconfig */,
-				5C1B3B91233E4EEF3B458C47 /* Pods-CityNapper-tvOS.release.xcconfig */,
-				C02F0E71D993AD6C10D80DA7 /* Pods-CityNapper-tvOSTests.debug.xcconfig */,
-				C5A37C906AAB253059B84B0A /* Pods-CityNapper-tvOSTests.release.xcconfig */,
-				74D3F169301F5F205B07E08A /* Pods-CityNapperTests.debug.xcconfig */,
-				3DDAF420CF15FDC0FEE6C6E0 /* Pods-CityNapperTests.release.xcconfig */,
+				2B4E3C85D8F1895BFEBC3D5C /* Pods-CityNapper.debug.xcconfig */,
+				02647710FCB30DF4450F1F0F /* Pods-CityNapper.release.xcconfig */,
+				AC67652909905CA21536B91F /* Pods-CityNapper-tvOS.debug.xcconfig */,
+				1DD7A963BE2FD0F888FCE0F3 /* Pods-CityNapper-tvOS.release.xcconfig */,
+				B13116AB753C6A785B2FD91A /* Pods-CityNapper-tvOSTests.debug.xcconfig */,
+				033FF0AB1241F8A2A5565ADC /* Pods-CityNapper-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -204,7 +196,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CityNapperTests" */;
 			buildPhases = (
-				4AAD5A6490D0C45CFDE67326 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -223,13 +214,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CityNapper" */;
 			buildPhases = (
-				92FA24F5717F154319D0E63D /* [CP] Check Pods Manifest.lock */,
+				982744C23C3FD6F5712418D7 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				4A4D8E94F9E7AAB4CBA0ED75 /* [CP] Copy Pods Resources */,
+				3639CB3B1EDC0AE5195C557E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,7 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "CityNapper-tvOS" */;
 			buildPhases = (
-				4C8D5E696042F6A22AF25F12 /* [CP] Check Pods Manifest.lock */,
+				7EE570D002BE2FEC4E01DE27 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -264,7 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "CityNapper-tvOSTests" */;
 			buildPhases = (
-				E490B4EE3B7D2CC02FA94D78 /* [CP] Check Pods Manifest.lock */,
+				5E79B929557AB2F058AE5066 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -391,7 +382,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		4A4D8E94F9E7AAB4CBA0ED75 /* [CP] Copy Pods Resources */ = {
+		3639CB3B1EDC0AE5195C557E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -441,7 +432,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CityNapper/Pods-CityNapper-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4AAD5A6490D0C45CFDE67326 /* [CP] Check Pods Manifest.lock */ = {
+		5E79B929557AB2F058AE5066 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -456,14 +447,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CityNapperTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CityNapper-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4C8D5E696042F6A22AF25F12 /* [CP] Check Pods Manifest.lock */ = {
+		7EE570D002BE2FEC4E01DE27 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -485,7 +476,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		92FA24F5717F154319D0E63D /* [CP] Check Pods Manifest.lock */ = {
+		982744C23C3FD6F5712418D7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -501,28 +492,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CityNapper-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E490B4EE3B7D2CC02FA94D78 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CityNapper-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -634,7 +603,6 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74D3F169301F5F205B07E08A /* Pods-CityNapperTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -657,7 +625,6 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DDAF420CF15FDC0FEE6C6E0 /* Pods-CityNapperTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -677,14 +644,14 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A0F46845330A4BADF7A393B /* Pods-CityNapper.debug.xcconfig */;
+			baseConfigurationReference = 2B4E3C85D8F1895BFEBC3D5C /* Pods-CityNapper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = X84RPB4674;
 				INFOPLIST_FILE = CityNapper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -699,13 +666,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52DFC8416014F0B149F1CF3B /* Pods-CityNapper.release.xcconfig */;
+			baseConfigurationReference = 02647710FCB30DF4450F1F0F /* Pods-CityNapper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X84RPB4674;
 				INFOPLIST_FILE = CityNapper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -720,7 +687,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4815B15FE49BE8290E992DB /* Pods-CityNapper-tvOS.debug.xcconfig */;
+			baseConfigurationReference = AC67652909905CA21536B91F /* Pods-CityNapper-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -748,7 +715,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C1B3B91233E4EEF3B458C47 /* Pods-CityNapper-tvOS.release.xcconfig */;
+			baseConfigurationReference = 1DD7A963BE2FD0F888FCE0F3 /* Pods-CityNapper-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -776,7 +743,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C02F0E71D993AD6C10D80DA7 /* Pods-CityNapper-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = B13116AB753C6A785B2FD91A /* Pods-CityNapper-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -803,7 +770,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5A37C906AAB253059B84B0A /* Pods-CityNapper-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 033FF0AB1241F8A2A5565ADC /* Pods-CityNapper-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

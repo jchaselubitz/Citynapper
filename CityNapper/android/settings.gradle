@@ -1,3 +1,5 @@
 rootProject.name = 'CityNapper'
+include ':react-native-boundary'
+project(':react-native-boundary').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-boundary/android')
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'

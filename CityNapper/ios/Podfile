@@ -44,10 +44,10 @@ target 'CityNapper' do
   # react-native-boundary dependencies
   pod 'RNBoundary', :podspec => '../node_modules/react-native-boundary/ios/RNBoundary.podspec'
   
-  target 'CityNapperTests' do
-    inherit! :search_paths
+  # target 'CityNapperTests' do
+  #   inherit! :search_pathspod
     # Pods for testing
-  end
+  # end
 
   use_native_modules!
 end
