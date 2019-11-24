@@ -251,11 +251,11 @@ PODS:
     - ReactCommon/jscallinvoker (= 0.61.2)
   - ReactNativeNavigation (2.27.9):
     - React
-  - RNBoundary (1.1.1):
-    - React
   - RNPermissions (2.0.2):
     - React
   - RNReverseGeocode (0.0.7):
+    - React
+  - RNSimpleNativeGeofencing (1.0.0):
     - React
   - RNVectorIcons (6.6.0):
     - React
@@ -295,9 +295,9 @@ DEPENDENCIES:
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - ReactNativeNavigation (from `../node_modules/react-native-navigation`)
-  - RNBoundary (from `../node_modules/react-native-boundary/ios/RNBoundary.podspec`)
   - RNPermissions (from `../node_modules/react-native-permissions`)
   - "RNReverseGeocode (from `../node_modules/@kiwicom/react-native-reverse-geocode`)"
+  - RNSimpleNativeGeofencing (from `../node_modules/react-native-simple-native-geofencing/ios/RNSimpleNativeGeofencing.podspec`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -364,12 +364,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   ReactNativeNavigation:
     :path: "../node_modules/react-native-navigation"
-  RNBoundary:
-    :podspec: "../node_modules/react-native-boundary/ios/RNBoundary.podspec"
   RNPermissions:
     :path: "../node_modules/react-native-permissions"
   RNReverseGeocode:
     :path: "../node_modules/@kiwicom/react-native-reverse-geocode"
+  RNSimpleNativeGeofencing:
+    :podspec: "../node_modules/react-native-simple-native-geofencing/ios/RNSimpleNativeGeofencing.podspec"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
   Yoga:
@@ -407,12 +407,12 @@ SPEC CHECKSUMS:
   React-RCTVibration: fb54c732fd20405a76598e431aa2f8c2bf527de9
   ReactCommon: 5848032ed2f274fcb40f6b9ec24067787c42d479
   ReactNativeNavigation: 00bfacb7d93b4d87464872cf6b9e4cd480ba0981
-  RNBoundary: 29313a1986de12cdb552d37db1e125d87b1f8d66
   RNPermissions: 76d6d5a65496b33378afe4b90ae5b30629ddd900
   RNReverseGeocode: c2c1d1593e4e09804fbb2643a2ea80fa031a9543
+  RNSimpleNativeGeofencing: b9fe4ae8f568650bd4300cece6fb1f6f2ab7885a
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   Yoga: 14927e37bd25376d216b150ab2a561773d57911f
 
-PODFILE CHECKSUM: 7ad62dbd90fa15f67c47cd2c4636912854328923
+PODFILE CHECKSUM: 536b9dde0c96888e4089ed0c86970ffa9b6525fa
 
 COCOAPODS: 1.8.4

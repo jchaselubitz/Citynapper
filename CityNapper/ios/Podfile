@@ -30,9 +30,12 @@ target 'CityNapper' do
   pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
   pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
 
+  
+
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'RNSimpleNativeGeofencing', :podspec => '../node_modules/react-native-simple-native-geofencing/ios/RNSimpleNativeGeofencing.podspec'
 
 
   # react-native-maps dependencies
@@ -42,7 +45,7 @@ target 'CityNapper' do
   pod 'Google-Maps-iOS-Utils' # Uncomment this line if you want to support GoogleMaps on iOS
   
   # react-native-boundary dependencies
-  pod 'RNBoundary', :podspec => '../node_modules/react-native-boundary/ios/RNBoundary.podspec'
+  # pod 'RNBoundary', :podspec => '../node_modules/react-native-boundary/ios/RNBoundary.podspec'
   
   # target 'CityNapperTests' do
   #   inherit! :search_pathspod
