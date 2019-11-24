@@ -1,0 +1,23 @@
+{
+  "name": "RNReverseGeocode",
+  "version": "0.0.7",
+  "summary": "A React Native wrapper for MapKit's MKLocalSearch and Geocoder's getFromLocatioName",
+  "homepage": "https://github.com/kiwicom/react-native-reverse-geocode",
+  "license": "MIT",
+  "authors": {
+    "Kiwi.com": "https://github.com/kiwicom"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/kiwicom/react-native-reverse-geocode.git",
+    "tag": "0.0.7"
+  },
+  "source_files": "ios/**/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

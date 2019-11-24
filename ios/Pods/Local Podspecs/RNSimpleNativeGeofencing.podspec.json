@@ -1,0 +1,25 @@
+{
+  "name": "RNSimpleNativeGeofencing",
+  "version": "1.0.0",
+  "summary": "RNSimpleNativeGeofencing",
+  "description": "RNSimpleNativeGeofencing",
+  "homepage": "RNSimpleNativeGeofencing",
+  "license": "MIT",
+  "authors": {
+    "author": "author@domain.cn"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/michaelmika/react-native-simple-native-geofencing",
+    "tag": "master"
+  },
+  "source_files": "RNSimpleNativeGeofencing/**/*.{h,m}",
+  "requires_arc": true,
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

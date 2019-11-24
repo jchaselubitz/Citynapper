@@ -1,0 +1,1 @@
+../../../../../node_modules/@kiwicom/react-native-reverse-geocode/ios/RNReverseGeocode.h
