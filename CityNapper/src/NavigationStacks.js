@@ -1,4 +1,4 @@
-import { createStackNavigator } from 'react-native-navigation'
+import {createStackNavigator} from 'react-navigation';
 import SearchContainer from './containers/SearchContainer'
 import NapContainer from './containers/NapContainer'
 import TripContainer from './containers/TripContainer'

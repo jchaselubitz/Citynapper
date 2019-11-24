@@ -249,11 +249,15 @@ PODS:
     - React-cxxreact (= 0.61.2)
     - React-jsi (= 0.61.2)
     - ReactCommon/jscallinvoker (= 0.61.2)
-  - ReactNativeNavigation (2.27.9):
+  - RNGestureHandler (1.5.1):
     - React
   - RNPermissions (2.0.2):
     - React
+  - RNReanimated (1.4.0):
+    - React
   - RNReverseGeocode (0.0.7):
+    - React
+  - RNScreens (1.0.0-alpha.23):
     - React
   - RNSimpleNativeGeofencing (1.0.0):
     - React
@@ -294,9 +298,11 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - ReactNativeNavigation (from `../node_modules/react-native-navigation`)
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNPermissions (from `../node_modules/react-native-permissions`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
   - "RNReverseGeocode (from `../node_modules/@kiwicom/react-native-reverse-geocode`)"
+  - RNScreens (from `../node_modules/react-native-screens`)
   - RNSimpleNativeGeofencing (from `../node_modules/react-native-simple-native-geofencing/ios/RNSimpleNativeGeofencing.podspec`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -362,12 +368,16 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
-  ReactNativeNavigation:
-    :path: "../node_modules/react-native-navigation"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
   RNPermissions:
     :path: "../node_modules/react-native-permissions"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
   RNReverseGeocode:
     :path: "../node_modules/@kiwicom/react-native-reverse-geocode"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
   RNSimpleNativeGeofencing:
     :podspec: "../node_modules/react-native-simple-native-geofencing/ios/RNSimpleNativeGeofencing.podspec"
   RNVectorIcons:
@@ -406,9 +416,11 @@ SPEC CHECKSUMS:
   React-RCTText: e3ef6191cdb627855ff7fe8fa0c1e14094967fb8
   React-RCTVibration: fb54c732fd20405a76598e431aa2f8c2bf527de9
   ReactCommon: 5848032ed2f274fcb40f6b9ec24067787c42d479
-  ReactNativeNavigation: 00bfacb7d93b4d87464872cf6b9e4cd480ba0981
+  RNGestureHandler: 7add966bb5d90ee8cf38d4341f87814474357972
   RNPermissions: 76d6d5a65496b33378afe4b90ae5b30629ddd900
+  RNReanimated: b2ab0b693dddd2339bd2f300e770f6302d2e960c
   RNReverseGeocode: c2c1d1593e4e09804fbb2643a2ea80fa031a9543
+  RNScreens: f28b48b8345f2f5f39ed6195518291515032a788
   RNSimpleNativeGeofencing: b9fe4ae8f568650bd4300cece6fb1f6f2ab7885a
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   Yoga: 14927e37bd25376d216b150ab2a561773d57911f

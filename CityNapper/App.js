@@ -1,16 +1,16 @@
 //HomeScreen
 import React, {Component} from 'react';
 import {AppRegistry, AsyncStorage} from 'react-native';
-import * as Polyline from '@mapbox/polyline';;
-import Boundary, {Events} from 'react-native-simple-native-geofencing';
-import createAppContainer from 'react-native-navigation';
-import NavigationService from './src/services/navigationService';;
-import Permissions from 'react-native-permissions';;
-import Keys from './src/helpers/Keys';;
-import permissionsService from './src/services/permissionsService';;
-import TripStack from './src/NavigationStacks';;
+import * as Polyline from '@mapbox/polyline';
+import Boundary from 'react-native-simple-native-geofencing';
+import createAppContainer from 'react-navigation';
+import NavigationService from './src/services/navigationService';
+import Permissions from 'react-native-permissions';
+import Keys from './src/helpers/Keys';
+import permissionsService from './src/services/permissionsService';
+import TripStack from './src/NavigationStacks';
 import pushNotification from './src/services/pushNotification';
-import StyleHelper from './src/helpers/StyleHelper';;
+import StyleHelper from './src/helpers/StyleHelper';
 
 export default class App extends Component {
   state = {
@@ -34,22 +34,22 @@ export default class App extends Component {
     homeButton: null,
     workButton: null,
     recentSelections: [],
-    darkMode: false,,
+    darkMode: false,
   };
 
   componentDidMount() {
     console.log('#### initialModeState', this.state.darkMode);
-    this.checkForExistingUser();;
+    this.checkForExistingUser();
 
-    this.checkMapLocationPermissions(() => this.watchLocation());;
+    this.checkMapLocationPermissions(() => this.watchLocation());
   }
 
   toggleDarkMode = () => {
-    console.log('#### toggle dark mode');;
-    StyleHelper.setColorMode(!this.state.darkMode);;
+    console.log('#### toggle dark mode');
+    StyleHelper.setColorMode(!this.state.darkMode);
     this.setState({darkMode: !this.state.darkMode}, () =>
       this.sendToLocalStorage('darkMode', this.state.darkMode),
-    );;
+    );
   };
 
   checkForExistingUser = () => {
@@ -67,8 +67,8 @@ export default class App extends Component {
         (error, stores) => {
           if (stores !== null) {
             stores.map((result, i, store) => {
-              this.setUserData(result[0], result[1]);;
-            });;
+              this.setUserData(result[0], result[1]);
+            });
           }
         },
       );
@@ -78,7 +78,7 @@ export default class App extends Component {
   };
 
   setUserData = (key, valueIn) => {
-    value = JSON.parse(valueIn);;
+    value = JSON.parse(valueIn);
 
     switch (key) {
       case 'darkMode':
@@ -91,21 +91,21 @@ export default class App extends Component {
         if (value === 'bus' || value === 'train' | value === 'subway')
           {this.setState({ mode: value});}
       default:
-        if (value !== null) this.setState({[key]: value});;
+        if (value !== null) this.setState({[key]: value});
     }
-    StyleHelper.setColorMode(this.state.darkMode);;
+    StyleHelper.setColorMode(this.state.darkMode);
   };
 
   checkMapLocationPermissions = nextFunction => {
     Permissions.check('location').then(response =>
       permissionsService.permissionsCheckpoint(response, nextFunction),
-    );;
+    );
   };
 
   checkBoundaryLocationPermissions = nextFunction => {
     Permissions.check('location', {type: 'always'}).then(response =>
       permissionsService.permissionsCheckpoint(response, nextFunction),
-    );;
+    );
   };
 
   watchLocation = () => {
@@ -115,16 +115,16 @@ export default class App extends Component {
           currentLatitude: position.coords.latitude,
           currentLongitude: position.coords.longitude,
           error: null,
-        });;
+        });
       },
       error => this.setState({error: error.message}),
       {
         enableHighAccuracy: true,
         timeout: 200000,
         maximumAge: 1000,
-        useSignificantChanges: false,,
+        useSignificantChanges: false,
       },
-    );;
+    );
   };
 
   //============= SETTER FUNCTIONS ======================
@@ -143,7 +143,7 @@ export default class App extends Component {
     try {
       await AsyncStorage.setItem(key, JSON.stringify(item));
     } catch (error) {
-      console.log('#### sendToLocalStorage', error);;
+      console.log('#### sendToLocalStorage', error);
     }
   };
 
@@ -151,11 +151,11 @@ export default class App extends Component {
     newArray =
       this.state.recentSelections.length > 2
         ? this.state.recentSelections.slice(1)
-        : this.state.recentSelections;;
+        : this.state.recentSelections;
     locationObject = {
       item,
       id: `${item.location.latitude},${item.location.longitude}`,
-    };;
+    };
     if (!newArray.map(i => i.id).includes(locationObject.id)) {
       this.setState({recentSelections: [...newArray, locationObject]});
     }
@@ -165,44 +165,44 @@ export default class App extends Component {
     locationObject = {
       item,
       id: `${item.location.latitude},${item.location.longitude}`,
-    };;
+    };
     if (this.state.userFavorites.map(l => l.id).includes(locationObject.id))
       this.setState(
         {
           userFavorites: this.state.userFavorites.filter(
             favorite => favorite.id !== locationObject.id,
-          ),,
+          ),
         },
         () =>
           this.sendToLocalStorage('userFavorites', this.state.userFavorites),
-      );;
+      );
     else {
       this.setState(
         {
-          userFavorites: [...this.state.userFavorites, locationObject],,
+          userFavorites: [...this.state.userFavorites, locationObject],
         },
         () =>
           this.sendToLocalStorage('userFavorites', this.state.userFavorites),
-      );;
+      );
     }
   };
 
   generateETA = callback => {
-    const now = new Date();;
+    const now = new Date();
     now.setSeconds(now.getSeconds() + this.state.secondsToDest - 180);
     this.setState({eta: now}, callback);
   };
 
   setDestinationLocation = destination => {
-    this.addRecentSelection(destination);;
-    this.checkBoundaryLocationPermissions();;
+    this.addRecentSelection(destination);
+    this.checkBoundaryLocationPermissions();
     this.setState(
       {
         destLocation: destination,
         destLatitude: destination.location.latitude,
         destLongitude: destination.location.longitude,
         destName: destination.name,
-        destAddress: destination.address,,
+        destAddress: destination.address,
       },
       () => this.setRoute(),
     );
@@ -211,7 +211,7 @@ export default class App extends Component {
   isFavorite = item => {
     return this.state.userFavorites
       .map(l => l.id)
-      .includes(`${item.location.latitude},${item.location.longitude}`);;
+      .includes(`${item.location.latitude},${item.location.longitude}`);
   };
 
   clearDestinationSelection = link => {
@@ -225,7 +225,7 @@ export default class App extends Component {
         napping: false,
       },
       link,
-    );;
+    );
   };
 
   //========== ROUTE MAPPING FUNCTIONS ===============
@@ -234,100 +234,100 @@ export default class App extends Component {
     // console.log('#### newMode', newMode)
     switch (newMode) {
       case 'private':
-        this.sendToLocalStorage('mode', 'driving');;
+        this.sendToLocalStorage('mode', 'driving');
         this.setState({mode: 'driving'}, () => this.setRoute());
-        break;;
+        break;
       case 'bus':
-        this.sendToLocalStorage('mode', 'transit');;
-        this.sendToLocalStorage('transitMode', 'bus');;
+        this.sendToLocalStorage('mode', 'transit');
+        this.sendToLocalStorage('transitMode', 'bus');
         this.setState({mode: 'transit', transitMode: 'bus'}, () =>
           this.setRoute(),
         );
-        break;;
+        break;
       case 'subway':
-        this.sendToLocalStorage('mode', 'transit');;
-        this.sendToLocalStorage('transitMode', 'subway');;
+        this.sendToLocalStorage('mode', 'transit');
+        this.sendToLocalStorage('transitMode', 'subway');
         this.setState({mode: 'transit', transitMode: 'subway'}, () =>
           this.setRoute(),
         );
-        break;;
+        break;
       case 'train':
-        this.sendToLocalStorage('mode', 'transit');;
-        this.sendToLocalStorage('transitMode', 'train');;
+        this.sendToLocalStorage('mode', 'transit');
+        this.sendToLocalStorage('transitMode', 'train');
         this.setState({mode: 'transit', transitMode: 'train'}, () =>
           this.setRoute(),
         );
-        break;;
+        break;
       default:
-        this.sendToLocalStorage('mode', 'transit');;
-        this.sendToLocalStorage('transitMode', 'bus');;
+        this.sendToLocalStorage('mode', 'transit');
+        this.sendToLocalStorage('transitMode', 'bus');
         this.setState({mode: 'transit', transitMode: 'bus'}, () =>
           this.setRoute(),
-        );;
+        );
     }
   };
 
 getCurrentMode = () => {
-    console.log('#### getCurrentMode', this.props.transitMode);;
+    console.log('#### getCurrentMode', this.props.transitMode);
     mode =
-      this.state.mode === 'transit' ? this.state.transitMode : this.state.mode;;
-    return `${mode[0].toUpperCase()}${mode.slice(1)}`;;
+      this.state.mode === 'transit' ? this.state.transitMode : this.state.mode;
+    return `${mode[0].toUpperCase()}${mode.slice(1)}`;
   };
 
   setRoute = () => {
     if (this.state.currentLatitude != null && this.state.destLatitude != null) {
       let concatStart =
-        this.state.currentLatitude + ',' + this.state.currentLongitude;;
+        this.state.currentLatitude + ',' + this.state.currentLongitude;
       let concatDestination =
-        this.state.destLatitude + ',' + this.state.destLongitude;;
-      this.getDirections(concatStart, concatDestination);;
-      this.getTimeToDest(concatStart, concatDestination);;
+        this.state.destLatitude + ',' + this.state.destLongitude;
+      this.getDirections(concatStart, concatDestination);
+      this.getTimeToDest(concatStart, concatDestination);
     } else {
       alert(
         'It seems you have chosen a destination that is too far away. Try one that is a little closer.',
-      );;
+      );
     }
   };
 
   async getDirections(tripOrigin, tripDestination) {
     try {
-      transitMode = this.state.mode === 'transit' ? this.state.transitMode : '';;
+      transitMode = this.state.mode === 'transit' ? this.state.transitMode : '';
       let resp = await fetch(
         `https://maps.googleapis.com/maps/api/directions/json?origin=${tripOrigin}&destination=${tripDestination}&mode=${
           this.state.mode
         }&transit_mode=${transitMode}&key=${Keys.GoogleKey}`,
-      );;
+      );
       let respJson = await resp.json();
       let points = Polyline.decode(respJson.routes[0].overview_polyline.points);
       let coords = points.map((point, index) => {
         return {
           latitude: point[0],
-          longitude: point[1],,
-        };;
-      });;
-      this.setState({routeCoords: coords});;
-      return coords;;
+          longitude: point[1],
+        };
+      });
+      this.setState({routeCoords: coords});
+      return coords;
     } catch  (error) {
-      return error;;
+      return error;
     }
   }
 
   async getTimeToDest(tripOrigin, tripDestination) {
     try {
-      transitMode = this.state.mode === 'transit' ? this.state.transitMode : '';;
+      transitMode = this.state.mode === 'transit' ? this.state.transitMode : '';
       let resp = await fetch(
         `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${tripOrigin}&destinations=${tripDestination}&mode=${
           this.state.mode
         }&transit_mode=${transitMode}&key=${Keys.GoogleKey}`,
-      );;
+      );
       let respJson = await resp.json();
-      let timeToDest = respJson.rows[0].elements[0].duration.text;;
-      let secondsToDest = respJson.rows[0].elements[0].duration.value;;
-      this.setState({timeToDest, secondsToDest});;
+      let timeToDest = respJson.rows[0].elements[0].duration.text;
+      let secondsToDest = respJson.rows[0].elements[0].duration.value;
+      this.setState({timeToDest, secondsToDest});
     } catch  (error) {
-      alert("Looks like we couldn't calculate the length of your trip");;
-      console.log('#### getTimeToDest error', error);;
-      return error;;
+      alert("Looks like we couldn't calculate the length of your trip");
+      console.log('#### getTimeToDest error', error);
+      return error;
     }
   }
 
@@ -344,8 +344,8 @@ getCurrentMode = () => {
       .then(() => console.log("boundary set"))
       .catch(e => console.error("error :(", e));}
 
-    Boundary.on(Events.ENTER, id => {
-      this.geoNotification();;
+    Boundary.on(Boundary.Events.ENTER, id => {
+      this.geoNotification();
       // this.startVibrationFunction()
     });
   };
@@ -353,25 +353,25 @@ getCurrentMode = () => {
   dropBoundary = () => {
     Boundary.removeAll()
       .then(() => console.log('Location Dropped'))
-      .catch(e => console.log('failed to drop location', e));;
+      .catch(e => console.log('failed to drop location', e));
   };
 
   //============= NAP FUNCTIONS ======================
 
   startNap = () => {
-    pushNotification.requestPermissions();;
-    this.generateETA(() => this.scheduleNotification());;
-    this.checkBoundaryLocationPermissions(() => this.setBoundary());;
+    pushNotification.requestPermissions();
+    this.generateETA(() => this.scheduleNotification());
+    this.checkBoundaryLocationPermissions(() => this.setBoundary());
     this.setState({napping: true});
   };
 
 
 
 endNap = () => {
-    this.dropBoundary();;
+    this.dropBoundary();
     // this.stopVibrationFunction()
-    this.clearDestinationSelection();;
-    pushNotification.cancelAllLocalNotifications();;
+    this.clearDestinationSelection();
+    pushNotification.cancelAllLocalNotifications();
   };
 
   //=========== ALERT ==================
@@ -382,10 +382,10 @@ endNap = () => {
           this.state.destName,
           this.state.eta,
         )
-      : null;;
+      : null;
   };
   geoNotification = () => {
-    pushNotification.localNotification(this.state.destName);;
+    pushNotification.localNotification(this.state.destName);
   };
 
   //======================================= Colors =================================
@@ -427,7 +427,7 @@ endNap = () => {
           darkMode: this.state.darkMode,
         }}
         ref={navigatorRef => {
-          NavigationService.setTopLevelNavigator(navigatorRef);;
+          NavigationService.setTopLevelNavigator(navigatorRef);
         }}
       />
     );

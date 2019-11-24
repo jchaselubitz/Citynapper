@@ -1,4 +1,4 @@
-import { NavigationActions } from 'react-native-navigation';
+import { NavigationActions } from 'react-navigation';
 
 let _navigator;
 
