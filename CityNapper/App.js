@@ -82,8 +82,8 @@ export default class App extends Component {
 
     switch (key) {
       case 'darkMode':
-        if (value === 'true' || value === 'false')
-          {this.setState({ darkMode: value}, )};
+        if (value === 'true' || value === 'false') 
+          {this.setState({ darkMode: value}, )}
       case 'mode':
         if (value === 'transit' || value === 'driving')
           {this.setState({ mode: value});}

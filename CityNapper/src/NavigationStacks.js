@@ -1,31 +1,28 @@
-import {createStackNavigator} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
+import {createAppContainer} from 'react-navigation';
 import SearchContainer from './containers/SearchContainer'
 import NapContainer from './containers/NapContainer'
 import TripContainer from './containers/TripContainer'
 import LocationErrorContainer from './containers/LocationErrorContainer'
-import StyleHelper from './helpers/StyleHelper'
 import {AppRegistry} from 'react-native';
-
-const { getStyles, getColors } = StyleHelper
 
 const TripStack = createStackNavigator(
   {
     Trip: {
-      screen: TripContainer
+      screen: TripContainer,
     },
     Search: {
-      screen: SearchContainer
+      screen: SearchContainer,
     },
     Nap: {
-      screen: NapContainer
+      screen: NapContainer,
     },
     LocationWarning: {
       screen: LocationErrorContainer,
       transparentCard: true,
       navigationOptions: {
         gesturesEnabled: false,
-        
-    },
+      },
     },
   },
   {
@@ -34,7 +31,6 @@ const TripStack = createStackNavigator(
   },
 );
 
-export default TripStack
+export default createAppContainer(TripStack);
 
 AppRegistry.registerComponent('CityNapper', () => TripStack);
-
